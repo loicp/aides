@@ -1,0 +1,56 @@
+1. pour créer un dépôt local à partir d’un dépôt github:
+--------------------------------------------------------
+
+click droit Git GUI dans Mes Documents
+
+Edit -> Options codage du contenu: iso 8859-1
+Cloner un dépôt distant
+source: git@github.com:loicp/coq.git
+cible: coq
+ok, donner 3 fois le password ssh
+
+aller dans coq, bidouiller des fichiers, en ajouter etc
+
+boucle de modif/commit:
+
+pour commiter:
+click droit Git GUI
+Recharger Modifs donne les fichiers modifiés, ajoutés, supprimés etc
+cliquer les icônes des fichiers, ils passent dans la fenetre du bas Modifs indexées, ou bien tout indexer avec le bouton Indexer Modifs
+mettre un message de commit, et cliquer Commiter
+
+pour pousser sur github:
+bouton Pousser ou Dépôt distant -> Pousser, 
+mettre l’emplacement: git@github.com:loicp/coq.git
+cliquer Pousser
+
+on peut aussi modifier sur github et y commiter mais ça tue les accents!!!
+
+récupérer les versions de github: 
+Dépôt distant -> Récupérer de -> origin
+Fusionner -> Fusion locale, Fusionner
+
+2. pour créer un dépôt nouveau test (local et sur github):
+------------------------------------------------------------
+sur github: 
+https://github.com/
+tableau de bord
+nouveau dépôt (en bas à droite) nom test
+créer un dépôt
+
+local: 
+création du dossier Mes Documents/test
+click droit Git Init Here sur le dossier test, ca crée un dossier .git dedans (virer le dossier .git si on veut nettoyer un répertoire)
+aller dedans
+click droit Git GUI
+Edit -> Options codage du contenu: iso 8859-1
+
+pour commiter:
+Recharger Modifs donne les fichiers modifiés, ajoutés, supprimés etc
+cliquer les icônes des fichiers, ils passent dans la fenetre du bas Modifs indexées
+mettre un message de commit, et cliquer Commiter
+
+pour pousser sur github:
+Dépôt distant -> Pousser, 
+mettre l’emplacement: git@github.com:loicp/test.git
+cliquer Pousser
